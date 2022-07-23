@@ -8,7 +8,7 @@ checkbox.addEventListener('change', ()=>{
 //Dark Mode Toggle End
 
 //Sliding Images Start
-const images = ["../assets/images/backgroundimg.png","../assets/images/backgroundimg1.png", "../assets/images/backgroundimg2.png", "../assets/images/backgroundimg3.png","../assets/images/backgroundimg4.png"];
+const images = ["assets/images/backgroundimg.png","assets/images/backgroundimg1.png", "assets/images/backgroundimg2.png", "assets/images/backgroundimg3.png","assets/images/backgroundimg4.png"];
 let i  = 0;
 function slideImg(){
   document.slide.src = images[i];
