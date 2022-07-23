@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+:root{
+    --bgColor:#fff;
+    --darkMode:#000;
+    --darkBlue:#003366;
+    --lightBlue:blueviolet
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dark-mode{
+    --bgColor:black;
+    --darkMode:#fff;
+    --darkBLue:blueviolet;
+    --lighBlue:#003366
+}
+body{
+    background-color: var(--bgColor);
+    font-family: "Poppins";
+    overflow: hidden;
+}
+#home,
+#particles-js {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+.navbar-brand{
+    color: var(--lighBlue);
+    font-weight: 900;
+}
+.navbar-brand:hover{
+    color:var(--lightBlue);
+    border-bottom: 1px solid var(--lightBlue);
+}
+.nav-link{
+    color: var(--darkMode);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+.nav-link:hover{
+    color:  var(--lightBlue);
+    border:1px solid var(--lightBlue);
+    border-radius: 2%;
+    transition: 1000ms;
+}
+.blur{
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+}
+.darkmodeButton{
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+.logo{
+    width: 30px;
+}
+.darkmode{
+    width: 30px;
+    height:30px;
+}
+.container{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+
+    animation: animateContainer 3s ease-in-out; 
+}
+
+@keyframes animateContainer{
+    0%{
+        top: -50%;
+    }
+    99%{
+        top: 21%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+.header_btn{
+    
+    outline: none;
+    border: none;
+    width: 130px;
+    background: none;
+    border-radius: 5%;
+    border: 1px solid var(--lightBlue);
+    padding: 10px;
+    transition: 1000ms;
+
+}
+.header_buttons{
+    margin-top: 20px;
+}
+.header_btn:hover{
+    border: 1px solid var(--bgColor);
+}
+.header_btn a{
+    text-decoration: none;
+
+}
+.left_container .name h4{
+
+    color:var(--darkMode);
+}
+.left_container .name h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color:var(--darkMode);
+}
+.left_container .name .wave{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+/* .left_container,.right_container{
+    background-color: red;
+} */
+.right_container .header_image img{
+    width: 400px;
+    height: 400px;
+}
+.element{
+    color: orange;
+}
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) } 
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
+  .social_media_links{
+      width: 267px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .social_media_links .fa-brands{
+        color: var(--darkBlue);
+        width: 20px;
+        height: 20px;
+    }
+
+  .footer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    bottom: 0%;
+    color:var(--darkMode);
+    font-size: 15px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+  }
+    @media only screen and (max-width:768px){
+       body{
+        overflow: hidden;
+       } 
+      .container{
+          position: absolute;
+          top: 10%;
+          left: 0%;
+          width: 100vw;
+          height: 90vh;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          animation: animateContainer 3s ease-in-out;
+      }
+      .navbar{
+        width: 95vw;
+        margin: auto;
+      }
+      @keyframes animateContainer{
+          0%{
+              top: -50%;
+          }
+          100%{
+              top: 10%;
+          }
+      }
+      .container .left_container .name h1{
+          font-size: 1.5rem;
+          color: var(--darkBlack);
+      }
+      .right_container{
+          margin-top: 10px;
+      }
+      .footer{
+            display: none;
+        }
+    }
