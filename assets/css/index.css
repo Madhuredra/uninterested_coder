@@ -46,10 +46,13 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.9px;
 }
-.nav-link:hover{
-    color:  var(--lightBlue);
-    border:1px solid var(--lightBlue);
-    border-radius: 2%;
+
+.nav-link:hover,.active1{
+    color: var(--lightBlue);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
     transition: 1000ms;
 }
 .blur{
@@ -180,6 +183,7 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
+    text-align: center;
     bottom: 0%;
     color:var(--darkMode);
     font-size: 15px;

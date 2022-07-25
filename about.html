@@ -12,14 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Toggler Button CSS -->
-    <link rel="stylesheet" href="../css/toggler.css">
+    <link rel="stylesheet" href="assets/css/toggler.css">
     <!-- Hardcoded CSS -->
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../html/about.html">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- loader -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <!-- About CSS -->
+    <link rel="stylesheet" href="assets/css/about.css">
 </head>
 <body>
+    <!-- Laoder -->
+    <div id="preloader">
+    </div>
+
+
+
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top blur" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top blur" id="navbar scrollDemo">
         <a class="navbar-brand" href="index.html">
             <i class="fas fa-code"></i>
             𝑀𝒶𝒹𝒽𝓊𝓇𝑒𝓃𝒹𝓇𝒶
@@ -35,7 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto" id="navbar-content">
                 <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item nav-item-hover"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item nav-item-hover "><a class="active1 nav-link" href="about.html">About</a></li>
                 <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
                 <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
                 <li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Platforms</a></li>
@@ -53,23 +64,92 @@
         </div>
         </nav>
 
-    <!-- Particles Background -->
-
-
+    
 
     
     <!-- Header -->
     
+    <div class="about_container reverse">
+        <div class="introduction">
+            <div class="intro_para blur">
+                <p class="typing">
+                
+                </p>
+            </div>
+        </div>
+        <div class="aboutImage">
+            <img src="assets/images/aboutImage.jpg" alt="">
+        </div>
+    </div>
+    <div class="about_container reveal fade-right">
+        <div class="aboutImage">
+            <img src="assets/images/aboutImage.jpg" alt="">
+        </div>
+        <div class="introduction">
+            <div class="intro_para blur">
+                <p class="typing1">
+                
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about_container reveal fade-left reverse">
+        <div class="introduction">
+            <div class="intro_para blur">
+                <p class="typing2">
+                
+                </p>
+            </div>
+        </div>
+        <div class="aboutImage">
+            <img src="assets/images/aboutImage.jpg" alt="">
+        </div>
+    </div>
+    <div class="about_container reveal fade-bottom">
+        <div class="aboutImage">
+            <img src="assets/images/aboutImage.jpg" alt="">
+        </div>
+        <div class="introduction">
+            <div class="intro_para blur">
+                <p class="typing3">
+                
+                </p>
+            </div>
+        </div>
+    </div>
     
+
+    <!-- Footer -->
+
+    <div class="blur fixed">
+        <div class="footer_container">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-snapchat"></i></a>
+            <a href=""><i class="fa-brands fa-quora"></i></a>
+            <a href=""><i class="fa-brands fa-reddit"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="gototop">
+            <a href="#" class="toTop">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
     
-    
+
+    <!-- Laoder Script -->
+    <script src="assets/js/loader.js"></script>
+
     <!-- Particles Script -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
-    <script src="../assets/js/particles.js"></script>
-    
+    <script src="assets/js/particles.js"></script>
+
     <!-- Javascript part -->
-    <script src="../assets/js/index.js"></script>
-    
+    <script src="assets/js/index.js"></script>
+
     <!-- Bootstrap script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -82,7 +162,12 @@
 
     <!-- Typed script -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="../assets/js/Typed.js"></script>
+    <script src="assets/js/Typed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Scroll script -->
+    <script src="assets/js/about.js"></script>
 </body>
+
+
 </html>

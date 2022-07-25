@@ -4,3 +4,12 @@ var type  = new Typed(".element" ,   {
     backSpeed:80,
     loop:true
 })
+
+
+
+
+
+
+
+
+

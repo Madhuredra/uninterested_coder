@@ -1,8 +1,9 @@
 //Dark Mode Toggle Start
 const checkbox = document.getElementById('checkbox');
-
+var audio = new Audio('assets/sounds/darkmode.mp3');
 checkbox.addEventListener('change', ()=>{
   document.body.classList.toggle('dark-mode');
+  audio.play();
 })
 
 //Dark Mode Toggle End
@@ -37,3 +38,4 @@ fetch("https://type.fit/api/quotes")
   });
 
 //Fetching Data from API End
+

@@ -1,0 +1,230 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+.about_container{
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+}
+.introduction{
+    /* background-color: blue; */
+    width: 60vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: comefromLeft 3s ease-in-out;
+    box-shadow: var(--darkMode) 0px 3px 8px;
+    /* blur effect style below */
+    /* background: url('../images/aboutDivbackground.jpg');
+    background-size: cover; */
+  }
+  .intro_para{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* background: url('../images/aboutDivbackground.jpg');
+    background-size: cover; */
+    /* background-color: yellow; */
+}
+.introduction p{
+    text-align: justify;
+    color: var(--darkMode);
+}
+.aboutImage{
+    /* background-color: green; */
+    box-shadow: var(--darkMode) 0px 3px 8px;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: comefromRight 4s ease-in-out;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.aboutImage img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes comefromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes comefromRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fixed{
+  /* background-color: #F3F3F3; */
+  padding-top: 10px;
+  padding-bottom: 0px;
+  position:fixed;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.footer_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+.gototop{
+  width: 40px;
+  position: absolute;
+  margin-left: 90%;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--darkMode);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 1000ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* visibility: hidden; */
+}
+.gototop a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.addanimation{
+  animation: identifier 1s ease-in-out infinite;
+}
+
+@keyframes identifier {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@media screen and (max-width: 768px) {
+    .about_container{
+        width: 100%;
+        height: 100%;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: comefromLeft 3s ease-in-out;
+        /* background-color: red; */
+    }
+    .reverse{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    .introduction{
+        width: 90%;
+        max-height: 70%;
+    }
+    .intro_para{
+      width: 100%;
+      height: 100%;
+    }
+    .aboutImage{
+        width: 90%;
+        box-shadow: none;
+    }
+    .aboutImage img{
+        width: 100%;
+        height: 100%;
+    }
+    .intro_para{
+      width: 80%;
+      height: 90%;
+      font-size: 15px;
+    }
+    .fixed{
+      background-color: #F3F3F3;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      position:fixed;
+      bottom:0;
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+    }
+}
